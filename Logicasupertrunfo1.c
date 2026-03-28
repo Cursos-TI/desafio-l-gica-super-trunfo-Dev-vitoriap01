@@ -30,7 +30,7 @@ int main(){
     char nomedacidadeB[20] = "Rio de janeiro";
     int populacaoB = 6748000;
     float areaB = 1200.25;
-    float PibB = 300.50;
+    float PibB = 300.50300.50;
     int pontos_turisticosB = 30;
     float densidade_populacionalB = populacaoB / areaB;
     float pib_per_captaB = PibB / populacaoB;

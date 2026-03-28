@@ -1,16 +1,89 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
 
+// === Carta 1 ===
+char nome1[] = "São paulo";
+int populacao1 = 12325000;
+float area1 = 1521.11;
+float pib1 = 699.28;
+int pontos1 = 50;
+
+// === Carta 2 ===
+char nome2[] = "Rio de janeiro";
+int populacao2 = 6748000;
+float area2 = 1200.25;
+float pib2 = 300.50;
+int pontos2 = 30;
+
+
+// === Carta 3 ===
+char nome3[] = "Paraná";
+int populacao3 = 11892355;
+float area3 = 199.307;
+float pib3 = 670.9;
+int pontos3 = 42;
+
+
+int opcao;
+
+printf("===Super Trunfo===");
+
+printf("Carta 1: %s\n", nome1);
+printf("Carta 2: %s\n\n", nome2);
+
+printf("Escolha uma carta para comparar: \n");
+printf("1 - populacao\n");
+printf("2 - area\n");
+printf("3 - pib\n");
+printf("4 - pontos turisticos\n");
+scanf("%d", &opcao);
+
+printf(" ==== Resultado ===\n");
+
+// Comparacões 
+
+if(opcao == 1){
+
+if (populacao1 > populacao2)
+printf("%s Venceu!\n", nome1);
+
+else if (populacao2 > populacao1)
+printf("%s Venceu!\n", nome2);
+
+}
+
+if (opcao == 2){
+
+    if(area1 > area2)
+    printf("%s Venceu!\n", nome1);
+
+    else if (area2 > area1)
+    printf("%s Venceu!\n", nome2);    
+}
+
+if (opcao == 3){
+
+    if (pib1 > pib2)
+    printf("%s Venceu!\n", nome1);
+
+    else if (pib2 > pib1)
+    printf("%s Venceu!\n", nome2);
+} 
+
+if (opcao == 4){
+    if (pontos1 > pontos2)
+    printf("%s Venceu!\n", nome1);
+    else if (pontos2 > pontos1);
+    printf("%s Venceu!\n", nome2);
+}
+
+
+  return 0;
+}
     
-    // Cadastro das Cartas:
+
+
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
@@ -39,5 +112,4 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-    return 0;
-}
+  
