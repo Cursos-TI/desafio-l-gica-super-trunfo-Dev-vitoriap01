@@ -17,20 +17,13 @@ float pib2 = 300.50;
 int pontos2 = 30;
 
 
-// === Carta 3 ===
-char nome3[] = "Paraná";
-int populacao3 = 11892355;
-float area3 = 199.307;
-float pib3 = 670.9;
-int pontos3 = 42;
-
-
 int opcao;
 
 printf("===Super Trunfo===");
 
 printf("Carta 1: %s\n", nome1);
 printf("Carta 2: %s\n\n", nome2);
+
 
 printf("Escolha uma carta para comparar: \n");
 printf("1 - populacao\n");
@@ -45,41 +38,48 @@ printf(" ==== Resultado ===\n");
 
 if(opcao == 1){
 
-if (populacao1 > populacao2)
+if (populacao1 > populacao2);
 printf("%s Venceu!\n", nome1);
+strcpy(cidadeVencedora, nome1);
 
-else if (populacao2 > populacao1)
+
+else if (populacao2 > populacao1);
 printf("%s Venceu!\n", nome2);
+strcpy(cidadeVencedora, nome2);
 
 }
 
 if (opcao == 2){
 
-    if(area1 > area2)
+    if(area1 > area2);
     printf("%s Venceu!\n", nome1);
 
-    else if (area2 > area1)
+    else if (area2 > area1);
     printf("%s Venceu!\n", nome2);    
 }
 
 if (opcao == 3){
 
-    if (pib1 > pib2)
+    if (pib1 > pib2);
     printf("%s Venceu!\n", nome1);
 
-    else if (pib2 > pib1)
-    printf("%s Venceu!\n", nome2);
+    else if (pib2 > pib1);
+    printf("%s Venceu!\n", nome2 );
 } 
 
 if (opcao == 4){
-    if (pontos1 > pontos2)
+    if (pontos1 > pontos2);
     printf("%s Venceu!\n", nome1);
     else if (pontos2 > pontos1);
     printf("%s Venceu!\n", nome2);
 }
 
+// Resultado final
+
+printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
   return 0;
+
 }
     
 
