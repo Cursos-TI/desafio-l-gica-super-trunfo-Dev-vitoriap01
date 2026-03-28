@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
@@ -39,24 +40,27 @@ printf(" ==== Resultado ===\n");
 
 if(opcao == 1){
 
-if (populacao1 > populacao2);
+if (populacao1 > populacao2) {
 printf("%s Venceu!\n", nome1);
 strcpy(cidadeVencedora, nome1);
+}
 
-
-else if (populacao2 > populacao1);
+else if (populacao2 > populacao1) {
 printf("%s Venceu!\n", nome2);
 strcpy(cidadeVencedora, nome2);
+}
 
 }
 
 if (opcao == 2){
 
-    if(area1 > area2);
+    if(area1 > area2) {
     printf("%s Venceu!\n", nome1);
+    }
 
-    else if (area2 > area1);
-    printf("%s Venceu!\n", nome2);    
+    else if (area2 > area1) {
+    printf("%s Venceu!\n", nome2);
+    }
 }
 
 if (opcao == 3){
@@ -69,10 +73,12 @@ if (opcao == 3){
 } 
 
 if (opcao == 4){
-    if (pontos1 > pontos2);
+    if (pontos1 > pontos2) {
     printf("%s Venceu!\n", nome1);
-    else if (pontos2 > pontos1);
+    }
+    else if (pontos2 > pontos1) {
     printf("%s Venceu!\n", nome2);
+    }
 }
 
 // Resultado final
