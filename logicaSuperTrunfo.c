@@ -16,10 +16,11 @@ float area2 = 1200.25;
 float pib2 = 300.50;
 int pontos2 = 30;
 
+char cidadeVencedora[50];
 
 int opcao;
 
-printf("===Super Trunfo===");
+printf("===Super Trunfo===\n\n");
 
 printf("Carta 1: %s\n", nome1);
 printf("Carta 2: %s\n\n", nome2);
