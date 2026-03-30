@@ -65,11 +65,14 @@ if (opcao == 2){
 
 if (opcao == 3){
 
-    if (pib1 > pib2);
-    printf("%s Venceu!\n", nome1);
+    if (pib1 > pib2) {
+        printf("%s Venceu!\n", nome1);
+    }
+    
 
-    else if (pib2 > pib1);
-    printf("%s Venceu!\n", nome2 );
+    else if (pib2 > pib1) {
+        printf("%s Venceu!\n", nome2);
+    }
 } 
 
 if (opcao == 4){
