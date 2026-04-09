@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
+
 int main() {
+
+        SetConsoleOutputCP(65001); // Definição certa para os caracteres em Windowns
 
 // === Carta 1 ===
 char nome1[] = "São paulo";
@@ -23,7 +26,12 @@ int opcao;
 
 printf("===Super Trunfo===\n\n");
 
-printf("Carta 1: %s\n", nome1);
+    int menuloop = 1;
+
+     while (menuloop == 1) {
+
+
+        printf("Carta 1: %s\n", nome1);
 printf("Carta 2: %s\n\n", nome2);
 
 
@@ -83,6 +91,9 @@ if (opcao == 4){
     printf("%s Venceu!\n", nome2);
     }
 }
+     }
+
+
 
 // Resultado final
 
@@ -94,32 +105,4 @@ printf("A cidade vencedora é: %s\n", cidadeVencedora);
     
 
 
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
-
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
-
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-  
+    
