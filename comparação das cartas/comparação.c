@@ -4,7 +4,6 @@
 
 int main() {
 
-        SetConsoleOutputCP(65001); // Definição certa para os caracteres em Windowns
 
 // === Carta 1 ===
 char nome1[] = "São paulo";
@@ -32,66 +31,66 @@ printf("===Super Trunfo===\n\n");
 
 
         printf("Carta 1: %s\n", nome1);
-printf("Carta 2: %s\n\n", nome2);
+    printf("Carta 2: %s\n\n", nome2);
 
 
-printf("Escolha uma carta para comparar: \n");
-printf("1 - populacao\n");
-printf("2 - area\n");
-printf("3 - pib\n");
-printf("4 - pontos turisticos\n");
-scanf("%d", &opcao);
+    printf("Escolha uma carta para comparar: \n");
+    printf("1 - populacao\n");
+    printf("2 - area\n");
+    printf("3 - pib\n");
+    printf("4 - pontos turisticos\n");
+    scanf("%d", &opcao);
 
-printf(" ==== Resultado ===\n");
+    printf(" ==== Resultado ===\n");
 
-// Comparacões 
+    // Comparacões 
 
-if(opcao == 1){
+    if(opcao == 1){
 
-if (populacao1 > populacao2) {
-printf("%s Venceu!\n", nome1);
-strcpy(cidadeVencedora, nome1);
-}
-
-else if (populacao2 > populacao1) {
-printf("%s Venceu!\n", nome2);
-strcpy(cidadeVencedora, nome2);
-}
-
-}
-
-if (opcao == 2){
-
-    if(area1 > area2) {
+    if (populacao1 > populacao2) {
     printf("%s Venceu!\n", nome1);
+    strcpy(cidadeVencedora, nome1);
     }
 
-    else if (area2 > area1) {
+    else if (populacao2 > populacao1) {
     printf("%s Venceu!\n", nome2);
+    strcpy(cidadeVencedora, nome2);
     }
-}
 
-if (opcao == 3){
+    }
 
-    if (pib1 > pib2) {
+    if (opcao == 2){
+
+        if(area1 > area2) {
         printf("%s Venceu!\n", nome1);
-    }
-    
+        }
 
-    else if (pib2 > pib1) {
+        else if (area2 > area1) {
         printf("%s Venceu!\n", nome2);
+        }
     }
-} 
 
-if (opcao == 4){
-    if (pontos1 > pontos2) {
-    printf("%s Venceu!\n", nome1);
+    if (opcao == 3){
+
+        if (pib1 > pib2) {
+            printf("%s Venceu!\n", nome1);
+        }
+        
+
+        else if (pib2 > pib1) {
+            printf("%s Venceu!\n", nome2);
+        }
+    } 
+
+    if (opcao == 4){
+        if (pontos1 > pontos2) {
+        printf("%s Venceu!\n", nome1);
+        }
+        else if (pontos2 > pontos1) {
+        printf("%s Venceu!\n", nome2);
+        }
     }
-    else if (pontos2 > pontos1) {
-    printf("%s Venceu!\n", nome2);
-    }
-}
-     }
+        }
 
 
 
