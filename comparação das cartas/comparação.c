@@ -29,12 +29,14 @@ int main() {
         printf("Carta 2: %s\n\n", nome2);
 
         printf("Escolha um atributo: \n");
-        printf("1 - populacao\n");
-        printf("2 - area\n");
-        printf("3 - pib\n");
-        printf("4 - pontos turisticos\n");
+        printf("1 - populacao vs Pib\n");
+        printf("2 - area vs Pontos turisticos\n");
+        printf("3 - pib vs Area\n");
+        printf("4 - pontos turisticos vs Populacao\n");
         printf("0 - sair\n");
         scanf("%d", &opcao);
+        printf("\033[H\033[J");
+
 
         printf("\n==== RESULTADO ====\n");
 
